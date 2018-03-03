@@ -13,10 +13,23 @@ var instructorPets = [
     {
         insturctorName: "Zoe",
         petName: "Biff",
-        animalType: "evil cat",
+        animalType: "cat",
         isFavorite: true
     },
 
+    {
+        insturctorName: "Zoe",
+        petName: "Whiskey",
+        animalType: "evil cat",
+        isFavorite: false
+    },
+
+    {
+        insturctorName: "Lauren",
+        petName: "Frankie",
+        animalType: "sweet dog",
+        isFavorite: true
+    },
     {
         insturctorName: "Callan",
         petName: "Seymour",
@@ -33,3 +46,8 @@ var instructorPets = [
 
 ];
 console.log("insturctorPets:" ,instructorPets);
+
+for(i=0; i<instructorPets.length; i++){
+document.getElementById("petnames").innerHTML += '<h1>' + instructorPets[i].petName + '</h1>';
+    // console.log(instructorPets);
+}
